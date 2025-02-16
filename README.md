@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-\# Playwright Test Execution Guide
-
-\## Prerequisites
-
-Ensure you have the following installed:
-
-\- \[Node.js\](https://nodejs.org/)
-
-\- \[Playwright\](https://playwright.dev/)
-
-\## Steps to Run Tests
-
 1️⃣ Extract the Project Files
 
 Unzip the target folder to access the project files.
