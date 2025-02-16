@@ -42,6 +42,7 @@ After execution, generate and view the test report:
 ```sh
 npx playwright show-report
 ```
+Or we can open the **playwright-report** folder from the project structure and select the **index.html** file after every execution with any browser.
 
 ## Additional Notes
 - Ensure **Playwright** is installed in your project. If not, install it using:
