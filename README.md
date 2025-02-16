@@ -28,6 +28,7 @@ Execute the following commands one by one:
 #### Run All Tests
 ```sh
 npx playwright test
+npx playwright test --project=chromium --headed
 ```
 
 #### Run Individual Test Cases in Chromium (Headed Mode)
