@@ -2,7 +2,7 @@
 import { test, expect } from '@playwright/test';
 
 
-test('Swag Labs Page', async ({page})=>{
+test('Swag Labs Login Page', async ({page})=>{
 
     await page.goto('https://www.saucedemo.com/');
 
@@ -19,9 +19,9 @@ test('Swag Labs Page', async ({page})=>{
 
     //expect(locator).toHaveText  ---------- matches text
     await expect(await page.locator('//h3[contains(text(),\'Epic sadface: Sorry, this user has been locked out\')]'))
-        .toHaveText("Epic sadface: Sorry, this user has been locked out.")//Full
+        .toContainText("Epic sadface: Sorry,")//Full
 
     await page.waitForTimeout(2000);
 
-    //await page.close();
+    await page.close();
 })

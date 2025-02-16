@@ -8,15 +8,13 @@ test('Dashboard Page', async ({page})=>{
 
     await page.waitForTimeout(2000);
 
-    //locked_out_user Login
+    //standard_user Login
     await page.locator('#user-name').fill('standard_user')
     await page.locator('#password').fill('secret_sauce')
     await page.locator('//input[@id=\'login-button\']').click()
 
     //expect(locator).toHaveText  ---------- matches text
-    await expect(await page.locator('.app_logo'))
-        .toHaveText("Swag Labs")/
-
+    await expect(await page.locator('.app_logo')).toHaveText("Swag Labs")
     await page.waitForTimeout(3000);
 
     //Hamburger_menu
@@ -62,6 +60,13 @@ test('Dashboard Page', async ({page})=>{
     await expect(await page.locator('.complete-header'))
         .toHaveText("Thank you for your order!")
 
-    await page.waitForTimeout(2000);
+    //Click_Hamburger_menu
+    await page.locator('//button[@id=\'react-burger-menu-btn\']').click()
+    //Click_Reset_App_State
+    await page.locator('//a[@id=\'reset_sidebar_link\']').click()
+    //Click_Logout_menu
+    await page.locator('//a[@id=\'logout_sidebar_link\']').click()
+
+    await page.close();
 
 })
