@@ -20,20 +20,26 @@ bash
 Copy
 Edit
 npx playwright test
+
 🔹 Step 6: Run Specific Test Files in Headed Mode (Chromium)
 bash
 Copy
 Edit
+
 npx playwright test 1_locked_out_user.spec.js --project=chromium --headed
 npx playwright test 2_standard_user.spec.js --project=chromium --headed
 npx playwright test 3_performance_glitch_user.spec.js --project=chromium --headed
+
 📊 View Test Report
+
+
 To open the Playwright test report, run:
 
 bash
 Copy
 Edit
 npx playwright show-report
+
 ✅ Requirements
 Node.js (v14 or above)
 
