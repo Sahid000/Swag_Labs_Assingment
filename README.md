@@ -2,8 +2,8 @@
 This project contains automated tests using Playwright. Follow the steps below to run the tests smoothly.
 
 📁 Project Setup
-🔹 Step 1: Unzip the Project
-Unzip the downloaded file to your desired location.
+
+🔹 Step 1: Unzip the downloaded Project to your desired location.
 
 🔹 Step 2: Open the Project in an IDE
 Use any code editor or IDE (such as VS Code, WebStorm, etc.) to open the project folder.
