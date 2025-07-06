@@ -12,6 +12,7 @@ Use any code editor or IDE (such as VS Code, WebStorm, etc.) to open the project
 Go to the tests folder in the project.
 
 💻 Run the Tests from Terminal
+
 🔹 Step 4: Open Terminal
 From within the IDE, open the Terminal window.
 
